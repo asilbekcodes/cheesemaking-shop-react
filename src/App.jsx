@@ -1,12 +1,18 @@
 import React from 'react';
 import Header from './components/Header';
 import './index.css';
+import { Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div>
+    <React.Fragment>
       <Header />
-    </div>
+        <Routes>
+          {/* <Route path='/' element={<Home />} /> */}
+        </Routes>
+      <Footer/>
+    </React.Fragment>
   );
 }
 
