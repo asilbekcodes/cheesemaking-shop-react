@@ -84,7 +84,7 @@ const Header = () => {
             </div>
             <div >
                 <p className='font-bold'>+8 916 460-19-60</p>
-                <button  type="button" class="text-[#FD9339] flex items-center gap-3  border border-[#FD9339]  focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-2 py-2 text-center me-2 mb-2">
+                <button  type="button" class="text-[#FD9339] flex items-center gap-3  border border-[#FD9339] rounded-lg text-sm px-2 py-2 text-center me-2 mb-2">
                     <FiPhone />
                     Заказать звонок
                 </button>
