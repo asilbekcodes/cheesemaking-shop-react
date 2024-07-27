@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.container{
+#root{
     width: 100%;
     padding: 10px 150px ;
+}
+
+body{
+    background: #FFFBED;
 }
