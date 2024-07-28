@@ -3,6 +3,7 @@ import { CiLocationOn } from 'react-icons/ci';
 import { FiPhone } from 'react-icons/fi';
 import { IoPersonCircleOutline } from 'react-icons/io5';
 import { TbClockHour4 } from 'react-icons/tb';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -62,9 +63,9 @@ const Header = () => {
             </div>
         </div>
         <div className='flex flex-wrap justify-between items-center my-5'>
-            <div>
+            <Link to={"/"}>
                 <img src="../src/assets/logos/logo.svg" alt="" />
-            </div>
+            </Link>
             <div className='flex items-center'>
                 <img src="../src/assets/images/delivery-06 1.svg" alt="" />
                 <p className='w-[80px] text-[#808080] text-[14px]'>Бесплатная доставка</p>
