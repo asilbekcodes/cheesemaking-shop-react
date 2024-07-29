@@ -24,8 +24,7 @@ const Main = () => {
 
   return (
     <div>
-
-            <img className='w-full py-10' src="../src/assets/images/pictures/Slider.svg" alt="" />
+      <img className='w-full py-10' src="../src/assets/images/pictures/Slider.svg" alt="" />
       <div className='flex gap-5'>
         <Hero />
         <div >
@@ -84,7 +83,7 @@ const Main = () => {
             <a href="#">
               <h5 className="mb-2 text-[] font-bold tracking-tight text-[#4E2D2D]">Сырная тарелка</h5>
             </a>
-            <p className="mb-3 font-normal ">Так называется блюдо, которое состоит  из разных сортов сыра. </p>
+            <p className="mb-3 font-normal ">Так называется блюдо, которое состоит из разных сортов сыра. </p>
             <a href="#" className="flex items-center py-1 text-sm font-medium text-center text-[#FD9339]">Читать далее 
               <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>

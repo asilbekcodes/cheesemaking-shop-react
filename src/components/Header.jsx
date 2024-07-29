@@ -93,8 +93,10 @@ const Header = () => {
             <div className='flex items-center'>
                 <p className='w-[120px]'>Ваша корзина <span className='text-[#FD9339]'>1680 руб.</span> </p>
                 <div className='flex items-start'>
-                    <img src="../src/assets/icons/shopping-cart 1.svg" alt="" />
-                    <p className='bg-[#FD9339] text-white rounded-full w-5 h-5 flex items-center justify-center relative right-4'>{length}</p>
+                    <Link to={"/card"}>
+                        <img src="../src/assets/icons/shopping-cart 1.svg" alt="" />
+                        <p className='bg-[#FD9339] text-white rounded-full w-5 h-5 flex items-center justify-center relative bottom-12 left-8'>{length}</p>
+                    </Link>
                 </div>
             </div>
         </div>

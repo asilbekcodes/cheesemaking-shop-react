@@ -4,6 +4,7 @@ import './index.css';
 import { Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+import Card from './pages/Card';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/card' element={<Card />} />
         </Routes>
       <Footer/>
     </React.Fragment>
