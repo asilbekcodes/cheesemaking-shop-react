@@ -37,12 +37,12 @@ const Home = ({addToCart}) => {
             {cardMap.map((item, index) => (
               <div key={index}>
                 <div className=" max-w-[250px] bg-white border border-gray-200 rounded-lg shadow ">
-                  <a href="#">
+                  <a href="ProductCard">
                     <img className="px-8 pt-5 rounded-t-lg" src={item.image} alt="product image" />
                     <img className='mx-auto' src={item.img} alt="" />
                   </a>
                   <div className="px-5 pb-5">
-                    <a href="#">
+                    <a href="ProductCard">
                       <h5 className="text-[16px] font-semibold tracking-tight pt-5">{item.title}</h5>
                     </a>
                     <hr className='my-4'/>

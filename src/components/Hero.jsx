@@ -16,13 +16,13 @@ const Hero = () => {
   return (
     <div>
         <div className='w-[250px] mb-5'>
-        <div className='flex items-center gap-3 bg-[#FBE8BB] p-3'>
+        <div className='flex items-center gap-3 bg-[#FBE8BB] p-3 hover:text-[#FD9339]'>
                 < PiCheese className='text-[25px]'/>
                 <p className='font-bold'>Ингредиенты</p>
         </div>
-            <div className='bg-[#fff]'>
+            <div className='bg-[#fff] '>
                 {heroMap.map((item, index) => (
-                    <div key={index} className="flex items-center justify-between p-3 border border-[#E6E6E6] border-solid">
+                    <div key={index} className="flex items-center justify-between p-3 border border-[#E6E6E6] border-solid hover:bg-[#FFF1DB] hover:text-[#FD9339]">
                         <h1>{ item.title }</h1>  
                         <h1>{ item.icon }</h1>
                     </div>
@@ -30,13 +30,13 @@ const Hero = () => {
             </div>
         </div>
         <div className='w-[250px]'>
-        <div className='flex items-center gap-3 bg-[#FBE8BB] p-3'>
+        <div className='flex items-center gap-3 bg-[#FBE8BB] p-3  hover:text-[#FD9339]'>
             < CiShoppingBasket className='text-[25px]'/>
             <p className='font-bold'>Оборудование</p>
         </div>
         <div className='bg-[#fff]'>
             {heroMap.map((item, index) => (
-                <div key={index} className="flex items-center justify-between p-3 border border-[#E6E6E6] border-solid">
+                <div key={index} className="flex items-center justify-between p-3 border border-[#E6E6E6] border-solid hover:bg-[#FFF1DB] hover:text-[#FD9339]">
                     <h1>{ item.title2 }</h1>  
                     <h1>{ item.icon }</h1>
                 </div>
