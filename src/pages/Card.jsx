@@ -36,21 +36,23 @@ const Card = ({ cart }) => {
                 <div className='text-right'>на сумму руб.</div>
               </div>
               <hr className='my-5' />
-              {cart.map((item, index) => (
-                <div key={index} className='flex flex-col justify-between items-center md:flex-row px-5'>
-                  <img className='object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg' src={cart.image} alt={cart.title} />
-                  <div className='flex flex-col justify-between p-4 leading-normal'>
-                    <h5 className='mb-2 text-lg font-semibold tracking-tight text-gray-900'>{cart.title}</h5>
-                    <p className='text-[#FD9339] underline decoration-solid cursor-pointer'>Удалить</p>
+              {cart.map(( index) => {
+                return (
+                  <div key={index} className='flex flex-col justify-between items-center md:flex-row px-5'>
+                      <img className='object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg' src={cart.image} alt={cart.title} />
+                      <div className='flex flex-col justify-between p-4 leading-normal'>
+                        <h5 className='mb-2 text-lg font-semibold tracking-tight text-gray-900'>{cart.title}</h5>
+                        <p className='text-[#FD9339] underline decoration-solid cursor-pointer'>Удалить</p>
+                      </div>
+                      <div className='flex items-center'>
+                        <button className='px-2'>−</button>
+                        <input type='text' className='w-8 text-center border mx-2' />
+                        <button className='px-2'>+</button>
+                      </div>
+                    <div className='ml-4 font-semibold'>{cart.money}</div>
                   </div>
-                  <div className='flex items-center'>
-                    <button className='px-2'>−</button>
-                    <input type='text' className='w-8 text-center border mx-2' />
-                    <button className='px-2'>+</button>
-                  </div>
-                  <div className='ml-4 font-semibold'>₽</div>
-                </div>
-              ))}
+                )
+              })}
             </div>
             <div className='p-5 bg-white my-5 w-[780px]'>
               <p className='font-bold text-[20px]'>Выберите способ доставки:</p>
@@ -157,4 +159,6 @@ const Card = ({ cart }) => {
 };
 
 export default Card;
+
+
 
