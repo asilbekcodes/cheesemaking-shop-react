@@ -51,7 +51,7 @@ const Home = ({addToCart}) => {
                           <span className="text-[16px] font-bold block">{item.money}</span>
                           <span className="text-[16px] text-[#f65b5b] line-through">{item.del}</span>
                         </div>
-                        <button onClick={() => addToCart(item)  } className='bg-[#FD9339] text-white rounded-lg px-3 py-2'>{item.btn}</button>
+                        <button onClick={() => addToCart({item})  } className='bg-[#FD9339] text-white rounded-lg px-3 py-2'>{item.btn}</button>
                       </div>
                   </div>
                 </div>
@@ -92,7 +92,6 @@ const Home = ({addToCart}) => {
           </div>
         </div>
       </div>
-      {/* <Main/> */}
       <MyCarousel/>
     </div>
   )
