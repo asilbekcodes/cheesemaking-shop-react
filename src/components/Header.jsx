@@ -57,10 +57,12 @@ const Header = ({length}) => {
                     <p>О компании</p>
                     <p>Преимущества</p>
                     <p>Акционные товары</p>
-                    <p className='flex items-center gap-1'>
-                        <IoPersonCircleOutline />
-                        Войти в аккаунт
-                    </p>
+                    <Link to={"/login"}>
+                        <p className='flex items-center gap-1 hover:text-[#FD9339]'>
+                            <IoPersonCircleOutline />
+                            Войти в аккаунт
+                        </p>
+                    </Link>
                 </div>
             </div>
             <div className='flex flex-wrap justify-between items-center my-5'>
