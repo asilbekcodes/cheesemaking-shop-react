@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Card from './pages/Card';
 import ProductCard from './pages/ProductCard';
+import Login from './pages/Login';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
           <Route path='/' element={<Home addToCart={addToCart}/>} />
           <Route path='/card' element={<Card cart={cart} setCart={setCart}  />} />
           <Route path='/productCard' element={<ProductCard/>} />
+          <Route path='/login' element={<Login/>} />
         </Routes>
       <Footer/>
     </React.Fragment>
